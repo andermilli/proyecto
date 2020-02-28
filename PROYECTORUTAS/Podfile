@@ -6,6 +6,5 @@ target 'PROYECTORUTAS' do
   use_frameworks!
 
   # Pods for PROYECTORUTAS
-pod 'SwiftyJSON'
 pod 'RealmSwift', '>= 0.92.3'
 end

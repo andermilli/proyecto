@@ -21,7 +21,6 @@ class nuevaruta: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate{
     var posiciones :[Location] = []
     let locationManager = CLLocationManager()
     var locationss: [CLLocationCoordinate2D] = []
-    var clasetabla = Celdas()
     
     
     
