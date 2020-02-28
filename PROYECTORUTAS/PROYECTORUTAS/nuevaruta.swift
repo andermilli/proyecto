@@ -67,6 +67,7 @@ class nuevaruta: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate{
     
     //detiene el cronómetro, no actualiza gps.
     @IBAction func acabar(_ sender: UIButton) {
+        
         timer.invalidate()
         time = 0
         controlempezarboton = true

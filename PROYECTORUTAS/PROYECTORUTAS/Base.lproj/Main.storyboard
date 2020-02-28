@@ -28,7 +28,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PROYECTORUTAS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="paA-b9-QUa">
@@ -39,17 +39,17 @@
                                 </items>
                             </navigationBar>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ybG-ux-QvO">
-                                <rect key="frame" x="54.5" y="135" width="305" height="244"/>
+                                <rect key="frame" x="54.5" y="47" width="305" height="244"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="305" id="M4l-5q-4uo"/>
                                     <constraint firstAttribute="height" constant="244" id="TvM-je-hQe"/>
                                 </constraints>
                             </mapView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j3U-pF-rKw">
-                                <rect key="frame" x="92" y="478" width="230" height="291"/>
+                                <rect key="frame" x="92" y="390" width="230" height="325"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bh4-dk-1Y2">
-                                        <rect key="frame" x="55" y="211" width="120" height="60"/>
+                                        <rect key="frame" x="55" y="245" width="120" height="60"/>
                                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="120" id="1yv-Rs-7n9"/>
@@ -112,11 +112,11 @@
             <objects>
                 <viewController id="uHq-Qy-veq" customClass="nuevaruta" customModule="PROYECTORUTAS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nmq-fr-IA5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dNt-xb-uFV">
-                                <rect key="frame" x="30" y="486" width="354" height="348"/>
+                                <rect key="frame" x="30" y="432" width="354" height="348"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evI-pT-4Mk">
                                         <rect key="frame" x="18.5" y="203" width="317" height="128"/>
@@ -127,6 +127,7 @@
                                         </state>
                                         <connections>
                                             <action selector="acabar:" destination="uHq-Qy-veq" eventType="touchUpInside" id="9oH-qO-5rp"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="oYN-0L-8ca"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdH-x3-OWS">
@@ -157,10 +158,10 @@
                                 </constraints>
                             </view>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ypC-nJ-aIn">
-                                <rect key="frame" x="87" y="142" width="240" height="231.5"/>
+                                <rect key="frame" x="87" y="54" width="240" height="265.5"/>
                             </mapView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7U1-BF-B8x">
-                                <rect key="frame" x="129" y="381.5" width="156" height="82.5"/>
+                                <rect key="frame" x="129" y="327.5" width="156" height="82.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="69"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -276,5 +277,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="I99-YX-c08"/>
+        <segue reference="oYN-0L-8ca"/>
     </inferredMetricsTieBreakers>
 </document>
