@@ -36,7 +36,7 @@ class nuevaruta: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate{
     override func viewDidLoad() {
         
         self.view.backgroundColor = #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)
-
+        
         
         
         mapview.delegate = self
@@ -88,7 +88,7 @@ class nuevaruta: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate{
             
             
         }
-        
+        // Aquí guarda la lista de la ruta en la base de datos, en un formato que ésta admite
         do {
             
             let realm = try Realm()
@@ -109,11 +109,6 @@ class nuevaruta: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate{
             print(error.localizedDescription)
         }
         
-        
-        
-        //   let realm = try! Realm()
-        
-        
     }
     
     @objc func action (){
@@ -133,10 +128,10 @@ class nuevaruta: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate{
         locationss.append(locValue)
         print(locValue)
         
+        // variable que crea la línea
         let polyline = MKPolyline(coordinates:locationss , count: locationss.count)
         
         
-        // let span:MKCoordinateSpan = MKCoordinateSpanMake(0.01, 0.01)
         let region = MKCoordinateRegion(center: locValue, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
         self.mapview.setRegion(region, animated: true)
         
@@ -146,7 +141,7 @@ class nuevaruta: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate{
         
     }
     
-    
+    //función que define cómo es la línea
     
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         let polylineRenderer = MKPolylineRenderer(overlay: overlay)

@@ -12,9 +12,6 @@ import Realm
 import MapKit
 
 
-
-
-
 class Celdas : UITableViewController{
     var listaceldas = [Celdadatos]()
     
@@ -22,14 +19,11 @@ class Celdas : UITableViewController{
     
     @IBOutlet weak var boton: UIButton!
     
-    
-    
     override  func viewDidLoad() {
         tableView.reloadData()
         
         do {
             let realm = try Realm()
-            
             
             
             let celdas = realm.objects(Celdadatos.self)
@@ -48,8 +42,6 @@ class Celdas : UITableViewController{
     }
     
     
-    
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "celda", for: indexPath)
         
@@ -58,7 +50,7 @@ class Celdas : UITableViewController{
         return cell
     }
     
-    
+    //función que elimina las filas de las tablas
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == UITableViewCell.EditingStyle.delete {
             listaceldas.remove(at: indexPath.row)
@@ -67,10 +59,6 @@ class Celdas : UITableViewController{
             
         }
     }
-    
-    
-    
-    
 }
 
 

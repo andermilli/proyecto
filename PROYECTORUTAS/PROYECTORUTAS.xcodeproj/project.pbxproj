@@ -15,8 +15,8 @@
 		42084EF023E08DD80025243B /* PROYECTORUTAS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 42084EEE23E08DD80025243B /* PROYECTORUTAS.xcdatamodeld */; };
 		42084EF223E08DDA0025243B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42084EF123E08DDA0025243B /* Assets.xcassets */; };
 		42084EF523E08DDA0025243B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42084EF323E08DDA0025243B /* LaunchScreen.storyboard */; };
-		427BB5A823F71A3300EA7599 /* tableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427BB5A723F71A3300EA7599 /* tableview.swift */; };
-		42A4732623F3181900184DB4 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A4732523F3181900184DB4 /* File.swift */; };
+		427BB5A823F71A3300EA7599 /* Historial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427BB5A723F71A3300EA7599 /* Historial.swift */; };
+		42A4732623F3181900184DB4 /* ClaseRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A4732523F3181900184DB4 /* ClaseRealm.swift */; };
 		42AFE6582406F6F9004CA621 /* Newcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AFE6572406F6F9004CA621 /* Newcontroller.swift */; };
 		42BBE7E723E48FBD003AA4B1 /* nuevaruta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BBE7E623E48FBD003AA4B1 /* nuevaruta.swift */; };
 /* End PBXBuildFile section */
@@ -31,8 +31,8 @@
 		42084EF123E08DDA0025243B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42084EF423E08DDA0025243B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42084EF623E08DDA0025243B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		427BB5A723F71A3300EA7599 /* tableview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableview.swift; sourceTree = "<group>"; };
-		42A4732523F3181900184DB4 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		427BB5A723F71A3300EA7599 /* Historial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Historial.swift; sourceTree = "<group>"; };
+		42A4732523F3181900184DB4 /* ClaseRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaseRealm.swift; sourceTree = "<group>"; };
 		42AFE6572406F6F9004CA621 /* Newcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Newcontroller.swift; sourceTree = "<group>"; };
 		42BBE7E623E48FBD003AA4B1 /* nuevaruta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nuevaruta.swift; sourceTree = "<group>"; };
 		7B266FFA0BAB8F73E2953DD0 /* Pods_PROYECTORUTAS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PROYECTORUTAS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,8 +90,8 @@
 				42084EF623E08DDA0025243B /* Info.plist */,
 				42084EEE23E08DD80025243B /* PROYECTORUTAS.xcdatamodeld */,
 				42BBE7E623E48FBD003AA4B1 /* nuevaruta.swift */,
-				42A4732523F3181900184DB4 /* File.swift */,
-				427BB5A723F71A3300EA7599 /* tableview.swift */,
+				42A4732523F3181900184DB4 /* ClaseRealm.swift */,
+				427BB5A723F71A3300EA7599 /* Historial.swift */,
 				42AFE6572406F6F9004CA621 /* Newcontroller.swift */,
 			);
 			path = PROYECTORUTAS;
@@ -223,10 +223,10 @@
 			files = (
 				42084EEA23E08DD80025243B /* title.swift in Sources */,
 				42084EE623E08DD80025243B /* AppDelegate.swift in Sources */,
-				42A4732623F3181900184DB4 /* File.swift in Sources */,
+				42A4732623F3181900184DB4 /* ClaseRealm.swift in Sources */,
 				42084EF023E08DD80025243B /* PROYECTORUTAS.xcdatamodeld in Sources */,
 				42AFE6582406F6F9004CA621 /* Newcontroller.swift in Sources */,
-				427BB5A823F71A3300EA7599 /* tableview.swift in Sources */,
+				427BB5A823F71A3300EA7599 /* Historial.swift in Sources */,
 				42BBE7E723E48FBD003AA4B1 /* nuevaruta.swift in Sources */,
 				42084EE823E08DD80025243B /* SceneDelegate.swift in Sources */,
 			);

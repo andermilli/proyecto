@@ -17,14 +17,9 @@ import Realm
 class Detalles : UIViewController, CLLocationManagerDelegate, MKMapViewDelegate{
     
     @IBOutlet weak var mapa: MKMapView!
-    
-    
-    
+
     
     @IBAction func presss(_ sender: UIButton) {
-
-        
-        
-        
+ 
     }
 }
